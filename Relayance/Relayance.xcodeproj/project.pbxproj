@@ -21,6 +21,7 @@
 		422740FB2C3ED0EE00E7522C /* DetailClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422740FA2C3ED0EE00E7522C /* DetailClientView.swift */; };
 		422740FD2C3ED18D00E7522C /* AjoutClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422740FC2C3ED18D00E7522C /* AjoutClientView.swift */; };
 		F97733FF2E328E4E002DE869 /* ClientsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97733FE2E328E44002DE869 /* ClientsTests.swift */; };
+		F97734012E33D512002DE869 /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734002E33D512002DE869 /* DateExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		422740FA2C3ED0EE00E7522C /* DetailClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailClientView.swift; sourceTree = "<group>"; };
 		422740FC2C3ED18D00E7522C /* AjoutClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutClientView.swift; sourceTree = "<group>"; };
 		F97733FE2E328E44002DE869 /* ClientsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsTests.swift; sourceTree = "<group>"; };
+		F97734002E33D512002DE869 /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				F97733FE2E328E44002DE869 /* ClientsTests.swift */,
 				422740812C3BF4DD00E7522C /* RelayanceTests.swift */,
+				F97734002E33D512002DE869 /* DateExtensionTests.swift */,
 			);
 			path = RelayanceTests;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97733FF2E328E4E002DE869 /* ClientsTests.swift in Sources */,
+				F97734012E33D512002DE869 /* DateExtensionTests.swift in Sources */,
 				422740822C3BF4DD00E7522C /* RelayanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
