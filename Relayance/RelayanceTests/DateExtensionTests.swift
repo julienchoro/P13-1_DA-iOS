@@ -38,9 +38,7 @@ final class DateExtensionTests: XCTestCase {
             XCTFail("impossible to convert date to string") }
         // When
         let stringDate = Date.stringFromDate(date)
-        //        guard let  else {
-        //
-        //        }
+
         // Then
         XCTAssertEqual(stringDate, "25-07-2025")
     }
@@ -64,8 +62,10 @@ final class DateExtensionTests: XCTestCase {
     
     func test_getYear_GivenADate_WhenAskingForYear_ThenShouldReturnCorrectYear() {
         let date = Date.dateFromString("2025-07-25T08:30:00Z")
+        
         // When
         let year = date?.getYear()
+        
         // Then
         XCTAssertEqual(year, 2025)
     }
