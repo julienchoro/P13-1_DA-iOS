@@ -22,6 +22,7 @@
 		422740FD2C3ED18D00E7522C /* AjoutClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422740FC2C3ED18D00E7522C /* AjoutClientView.swift */; };
 		F97733FF2E328E4E002DE869 /* ClientsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97733FE2E328E44002DE869 /* ClientsTests.swift */; };
 		F97734012E33D512002DE869 /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734002E33D512002DE869 /* DateExtensionTests.swift */; };
+		F97734032E367672002DE869 /* ModelDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734022E367672002DE869 /* ModelDataTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		422740FC2C3ED18D00E7522C /* AjoutClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutClientView.swift; sourceTree = "<group>"; };
 		F97733FE2E328E44002DE869 /* ClientsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsTests.swift; sourceTree = "<group>"; };
 		F97734002E33D512002DE869 /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
+		F97734022E367672002DE869 /* ModelDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				F97733FE2E328E44002DE869 /* ClientsTests.swift */,
 				422740812C3BF4DD00E7522C /* RelayanceTests.swift */,
 				F97734002E33D512002DE869 /* DateExtensionTests.swift */,
+				F97734022E367672002DE869 /* ModelDataTests.swift */,
 			);
 			path = RelayanceTests;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97733FF2E328E4E002DE869 /* ClientsTests.swift in Sources */,
+				F97734032E367672002DE869 /* ModelDataTests.swift in Sources */,
 				F97734012E33D512002DE869 /* DateExtensionTests.swift in Sources */,
 				422740822C3BF4DD00E7522C /* RelayanceTests.swift in Sources */,
 			);
