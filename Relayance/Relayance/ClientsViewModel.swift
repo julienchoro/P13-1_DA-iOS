@@ -25,8 +25,12 @@ class ClientsViewModel: ObservableObject {
     
     func supprimerClient(client: Client) -> Bool {
         let index = clientsList.firstIndex(of:client)
-        clientsList.remove(at: index!)
-        return true
+        if let position = index {
+            clientsList.remove(at: position)
+            return true
+        } else {
+            return false
+        }
     }
     
     private func validerEmail(email: String) -> Bool {

@@ -9,7 +9,7 @@ import XCTest
 @testable import Relayance
 
 final class ClientsViewModelTests: XCTestCase {
-
+    
     // Test for the Add client feature
     func test_ajouterClient_GivenValidEmailAndName_WhenAddingClient_ThenClientIsAdded() {
         // Given
@@ -32,7 +32,7 @@ final class ClientsViewModelTests: XCTestCase {
         
         // When
         let success = clientsViewModel.ajouterNouveauClient(nom: nom, email: email)
-
+        
         // Then
         XCTAssertFalse(success)
     }
@@ -51,5 +51,19 @@ final class ClientsViewModelTests: XCTestCase {
         XCTAssertTrue(success)
         XCTAssertFalse(viewModel.clientsList.contains(where: { $0.nom == "Frida Kahlo" }))
     }
-
+    
+    func test_supprimerClient_GivenNonExistingClient_WhenDeletingClient_ThenReturnsFalse() {
+        // Given
+        let viewModel = ClientsViewModel()
+        let nom = "client inexistant"
+        let email = "client@inexistant.com"
+        
+        // When
+        let success = viewModel.supprimerClient(client: Client.creerNouveauClient(nom: nom,
+                                                                          email: email))
+        
+        // Then
+        XCTAssertFalse(success)
+    }
+    
 }
