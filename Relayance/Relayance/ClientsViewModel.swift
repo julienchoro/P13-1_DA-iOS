@@ -14,4 +14,9 @@ class ClientsViewModel: ObservableObject {
         clientsList = ModelData.chargement("Source.json")
     }
     
+    func ajouterNouveauClient(client: Client) -> Bool {
+        clientsList.append(client)
+        return true
+    }
+    
 }

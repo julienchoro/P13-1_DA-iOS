@@ -24,6 +24,7 @@
 		F97734012E33D512002DE869 /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734002E33D512002DE869 /* DateExtensionTests.swift */; };
 		F97734032E367672002DE869 /* ModelDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734022E367672002DE869 /* ModelDataTests.swift */; };
 		F97734052E3680AB002DE869 /* ClientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734042E3680AB002DE869 /* ClientsViewModel.swift */; };
+		F97734072E3688C2002DE869 /* ClientsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734062E3688C2002DE869 /* ClientsViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		F97734002E33D512002DE869 /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
 		F97734022E367672002DE869 /* ModelDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataTests.swift; sourceTree = "<group>"; };
 		F97734042E3680AB002DE869 /* ClientsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsViewModel.swift; sourceTree = "<group>"; };
+		F97734062E3688C2002DE869 /* ClientsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				422740812C3BF4DD00E7522C /* RelayanceTests.swift */,
 				F97734002E33D512002DE869 /* DateExtensionTests.swift */,
 				F97734022E367672002DE869 /* ModelDataTests.swift */,
+				F97734062E3688C2002DE869 /* ClientsViewModelTests.swift */,
 			);
 			path = RelayanceTests;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97733FF2E328E4E002DE869 /* ClientsTests.swift in Sources */,
+				F97734072E3688C2002DE869 /* ClientsViewModelTests.swift in Sources */,
 				F97734032E367672002DE869 /* ModelDataTests.swift in Sources */,
 				F97734012E33D512002DE869 /* DateExtensionTests.swift in Sources */,
 				422740822C3BF4DD00E7522C /* RelayanceTests.swift in Sources */,
