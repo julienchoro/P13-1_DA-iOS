@@ -23,6 +23,7 @@
 		F97733FF2E328E4E002DE869 /* ClientsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97733FE2E328E44002DE869 /* ClientsTests.swift */; };
 		F97734012E33D512002DE869 /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734002E33D512002DE869 /* DateExtensionTests.swift */; };
 		F97734032E367672002DE869 /* ModelDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734022E367672002DE869 /* ModelDataTests.swift */; };
+		F97734052E3680AB002DE869 /* ClientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734042E3680AB002DE869 /* ClientsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		F97733FE2E328E44002DE869 /* ClientsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsTests.swift; sourceTree = "<group>"; };
 		F97734002E33D512002DE869 /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
 		F97734022E367672002DE869 /* ModelDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataTests.swift; sourceTree = "<group>"; };
+		F97734042E3680AB002DE869 /* ClientsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				422740F82C3ED02400E7522C /* Source.json */,
 				422740FA2C3ED0EE00E7522C /* DetailClientView.swift */,
 				422740FC2C3ED18D00E7522C /* AjoutClientView.swift */,
+				F97734042E3680AB002DE869 /* ClientsViewModel.swift */,
 			);
 			path = Relayance;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				422740FD2C3ED18D00E7522C /* AjoutClientView.swift in Sources */,
 				422740712C3BF4DC00E7522C /* RelayanceApp.swift in Sources */,
 				422740F72C3ECFD600E7522C /* ModelData.swift in Sources */,
+				F97734052E3680AB002DE869 /* ClientsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
