@@ -13,8 +13,7 @@ struct RelayanceApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ListClientsView()
-                .environmentObject(viewModel)
+            ListClientsView(clientViewModel: viewModel)
         }
     }
 }
