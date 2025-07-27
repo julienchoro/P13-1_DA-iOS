@@ -25,6 +25,8 @@
 		F97734032E367672002DE869 /* ModelDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734022E367672002DE869 /* ModelDataTests.swift */; };
 		F97734052E3680AB002DE869 /* ClientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734042E3680AB002DE869 /* ClientsViewModel.swift */; };
 		F97734072E3688C2002DE869 /* ClientsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97734062E3688C2002DE869 /* ClientsViewModelTests.swift */; };
+		F977340C2E369B76002DE869 /* AjoutClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F977340B2E369B76002DE869 /* AjoutClientUITests.swift */; };
+		F977340E2E369B8D002DE869 /* SuppressionClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F977340D2E369B8D002DE869 /* SuppressionClientUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		F97734022E367672002DE869 /* ModelDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataTests.swift; sourceTree = "<group>"; };
 		F97734042E3680AB002DE869 /* ClientsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsViewModel.swift; sourceTree = "<group>"; };
 		F97734062E3688C2002DE869 /* ClientsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsViewModelTests.swift; sourceTree = "<group>"; };
+		F977340B2E369B76002DE869 /* AjoutClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutClientUITests.swift; sourceTree = "<group>"; };
+		F977340D2E369B8D002DE869 /* SuppressionClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuppressionClientUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 			children = (
 				4227408B2C3BF4DD00E7522C /* RelayanceUITests.swift */,
 				4227408D2C3BF4DD00E7522C /* RelayanceUITestsLaunchTests.swift */,
+				F977340B2E369B76002DE869 /* AjoutClientUITests.swift */,
+				F977340D2E369B8D002DE869 /* SuppressionClientUITests.swift */,
 			);
 			path = RelayanceUITests;
 			sourceTree = "<group>";
@@ -342,7 +348,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F977340E2E369B8D002DE869 /* SuppressionClientUITests.swift in Sources */,
 				4227408C2C3BF4DD00E7522C /* RelayanceUITests.swift in Sources */,
+				F977340C2E369B76002DE869 /* AjoutClientUITests.swift in Sources */,
 				4227408E2C3BF4DD00E7522C /* RelayanceUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
