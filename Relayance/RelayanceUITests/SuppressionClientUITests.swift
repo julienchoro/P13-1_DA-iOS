@@ -9,31 +9,37 @@ import XCTest
 
 final class SuppressionClientUITests: XCTestCase {
 
+    var app: XCUIApplication!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app = XCUIApplication()
+        app.launch()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        app = nil
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
+    // Test Scénario : Supprimer un client existant
+    func test_supprimerClient_GivenExistingClient_WhenDeletingClient_ThenClientIsRemoved() throws {
+        // Given L'utilisateur est sur la liste des clients
+        app.activate()
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+        // And La liste contient le client "Frida Kahlo"
+        XCTAssertTrue(app.staticTexts["Frida Kahlo"].exists)
 
-    func testLaunchPerformance() throws {
-        // This measures how long it takes to launch your application.
-        measure(metrics: [XCTApplicationLaunchMetric()]) {
-            XCUIApplication().launch()
-        }
+        // When L'utilisateur sélectionne le client "Frida Kahlo"
+        app.staticTexts["Frida Kahlo"].tap()
+        
+        // And L'utilisateur appuie sur le bouton "Supprimer"
+        app.buttons["Supprimer"].tap()
+        
+        // Then L'application revient sur l'écran de la liste des clients
+        XCTAssertTrue(app.navigationBars["Liste des clients"].exists)
+        
+        // And Le client "Frida Kahlo" n'apparaît plus dans la liste
+        XCTAssertFalse(app.staticTexts["Frida Kahlo"].exists, "Frida Kahlo ne devrait plus être dans la liste")
     }
+    
 }
