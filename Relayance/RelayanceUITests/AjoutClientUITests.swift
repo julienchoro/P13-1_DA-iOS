@@ -6,34 +6,72 @@
 //
 
 import XCTest
+import SwiftUI
 
 final class AjoutClientUITests: XCTestCase {
-
+    var app: XCUIApplication!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app = XCUIApplication()
+        app.launch()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        app = nil
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
+    // Test Scénario : Add client with valid information
+    func test_ajoutClient_GivenValidEmailAndName_WhenAddingClient_ThenClientIsAdded() throws {
+        // Given L'utilisateur est sur la liste des clients
+        app.activate()
+        
+        // When L'utilisateur appuie sur le bouton "Ajouter un client"
+        app.buttons["Ajouter un client"].tap()
+        
+        // And L'utilisateur saisit "Ju Cho" dans le champ nom
+        app.textFields["Nom"].tap()
+        app.typeText("Ju Cho")
+        
+        // And L'utilisateur saisit "julienchoro@icloud.com" dans le champ email
+        app.textFields["Email"].tap()
+        app.typeText("julienchoro@icloud.com")
+        
+        // And L'utilisateur appuie sur le bouton "Ajouter"
+        app.buttons["Ajouter"].tap()
+        
+        // Then L'application revient sur l'écran de la liste des clients
+        XCTAssertTrue(app.navigationBars["Liste des clients"].exists)
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // And Le client "Ju Cho" apparaît dans la liste des clients
+        XCTAssertTrue(app.staticTexts["Ju Cho"].exists)
+        
     }
+    
+    // Test Scénario : Add client with invalid information
+    func test_ajoutClient_GivenInvalidEmailAndName_WhenAddingClient_ThenClientIsNotAdded() throws {
+        // Given L'utilisateur est sur la liste des clients
+        app.activate()
+        
+        // When L'utilisateur appuie sur le bouton "Ajouter un client"
+        app.buttons["Ajouter un client"].tap()
+        
+        // And L'utilisateur saisit "Ju Cho" dans le champ nom
+        app.textFields["Nom"].tap()
+        app.typeText("Ju Cho")
+        
+        // And L'utilisateur saisit "julienchoro.com" dans le champ email
+        app.textFields["Email"].tap()
+        app.typeText("julienchoro.com")
+        
+        // And L'utilisateur appuie sur le bouton "Ajouter"
+        app.buttons["Ajouter"].tap()
+        
+        // Then L'application revient sur l'écran de la liste des clients
+        XCTAssertTrue(app.navigationBars["Liste des clients"].exists)
 
-    func testLaunchPerformance() throws {
-        // This measures how long it takes to launch your application.
-        measure(metrics: [XCTApplicationLaunchMetric()]) {
-            XCUIApplication().launch()
-        }
+        // And Le client "Ju Cho" n'apparaît pas dans la liste des clients
+        XCTAssertFalse(app.staticTexts["Ju Cho"].exists)
+        
     }
 }
